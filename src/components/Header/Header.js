@@ -23,7 +23,7 @@ const Header = () => {
 
 const Logo = ({ children }) => {
     return (
-        <Typography variant='h2' component='h2' fontSize={24} fontWeight={900} color='white'>
+        <Typography variant='h2' component='h2' fontSize={24} fontWeight={900} color='white' letterSpacing={2}>
             {children}
         </Typography>
     );
