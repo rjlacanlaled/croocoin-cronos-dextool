@@ -12,7 +12,7 @@ const Header = () => {
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    backgroundColor: '#0C1426',
+                    backgroundColor: 'rgb(16, 153, 250, 0.2)',
                     padding: '1rem 2rem 1rem 2rem',
                 }}
             >

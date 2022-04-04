@@ -1,6 +1,7 @@
 import { Telegram } from '@mui/icons-material';
-import { ButtonGroup, Paper, Typography } from '@mui/material';
+import { ButtonGroup, Input, InputAdornment, OutlinedInput, Paper, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { StyledTextInput } from '../../components/styles/input';
 
 const Home = () => {
     return (
@@ -10,13 +11,19 @@ const Home = () => {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
-                paddingTop: '1rem',
-                gap: '1rem'
+                paddingTop: '2rem',
+                gap: '2rem',
             }}
         >
-            <Typography variant='h3' component='h1' textAlign='center' fontWeight={900}>
+            <Typography variant='h3' component='h1' textAlign='center' fontWeight={700} color="white">
                 Cronos Charts
             </Typography>
+
+            <TextField
+                id='token-id'
+                label='Seach Token'
+                helperText='Paste address or seach name'
+            />
         </Box>
     );
 };
