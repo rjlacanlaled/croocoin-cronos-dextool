@@ -5,7 +5,7 @@ import { StyledTextField } from '../../components/styles/inputs.styled';
 import { MainContentContainer, PageContainer } from '../../components/styles/containers.styled';
 import { MainTitleText } from '../../components/styles/texts.styled';
 import SearchAppBar from '../../components/SearchAppBar/SearchAppBar';
-
+import StickyHeadTable from '../../components/StickyHeadTable/StickyHeadTable';
 
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
                 <StyledTextField id='token-id' label='Seach Token' helperText='Search token or paste contract' fullWidth />
                 <Box>
                     <SearchAppBar />
+                    <StickyHeadTable />
                 </Box>
             </MainContentContainer>
         </PageContainer>
