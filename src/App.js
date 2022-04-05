@@ -11,11 +11,14 @@ const theme = createTheme({
         },
     },
     components: {
-        MuiTextField: {
-            root: {
-              backgroundColor: 'red'
-            },
-        },
+        MuiTablePagination: {
+          styleOverrides: {
+            menuItem: {
+              color: '#051421',
+              fontSize: '0.8rem'
+            }
+          }
+        }
     },
 });
 

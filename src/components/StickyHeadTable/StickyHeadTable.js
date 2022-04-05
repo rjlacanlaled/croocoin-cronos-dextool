@@ -7,25 +7,26 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import styled from 'styled-components';
 
 const columns = [
-    { id: 'contract', label: 'Contract', minWidth: 170 },
-    { id: 'name', label: 'Name', minWidth: 100 },
+    { id: 'contract', label: 'Contract', minWidth: 100 },
+    { id: 'name', label: 'Name', minWidth: 70 },
     {
         id: 'symbol',
         label: 'Symbol',
-        minWidth: 170,
+        minWidth: 100,
     },
     {
         id: 'balance',
         label: 'Balance',
-        minWidth: 170,
+        minWidth: 100,
         align: 'left',
     },
     {
         id: 'actions',
         label: '',
-        minWidth: 170,
+        minWidth: 100,
     },
 ];
 
@@ -35,9 +36,9 @@ function createData(address, name, symbol, balance, actions) {
 }
 
 const rows = [
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Wrapped BNB', 'IN', 1324171354, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'CN', 1403500365, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'IT', 60483973, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Wrapped BNB', 'WBNB', 1324171354, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'MTK', 1403500365, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'BUSD', 60483973, 'Delete'),
     createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'US', 327167434, 'Delete'),
     createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'CA', 37602103, 'Delete'),
     createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'AU', 25475400, 'Delete'),
@@ -51,6 +52,10 @@ const rows = [
     createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'NG', 200962417, 'Delete'),
     createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'BR', 210147125, 'Delete'),
 ];
+
+const StyledTablePagination = styled(TablePagination)`
+
+`;
 
 export default function StickyHeadTable() {
     const [page, setPage] = React.useState(0);
@@ -103,7 +108,7 @@ export default function StickyHeadTable() {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <TablePagination
+            <StyledTablePagination
                 rowsPerPageOptions={[10, 25, 100]}
                 component='div'
                 count={rows.length}

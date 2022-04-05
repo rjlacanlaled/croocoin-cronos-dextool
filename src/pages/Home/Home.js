@@ -13,7 +13,7 @@ const Home = () => {
         <PageContainer>
             <MainContentContainer>
                 <MainTitleText>Chronos Chart</MainTitleText>
-                <StyledTextField id='token-id' label='Seach Token' helperText='Search token or paste contract' fullWidth />
+                <StyledTextField id='token-id' label='Seach Token' helperText='Search token or paste contract' />
                 <Box>
                     <SearchAppBar />
                     <StickyHeadTable />
