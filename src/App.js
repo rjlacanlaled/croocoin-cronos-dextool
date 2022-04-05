@@ -8,7 +8,14 @@ const theme = createTheme({
         text: {
             primary: 'hsl(0, 0%, 100%)',
             secondary: 'hsl(0, 0%, 80%)',
-        }
+        },
+    },
+    components: {
+        MuiTextField: {
+            root: {
+              backgroundColor: 'red'
+            },
+        },
     },
 });
 
