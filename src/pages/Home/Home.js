@@ -1,16 +1,22 @@
 import { Telegram } from '@mui/icons-material';
-import { ButtonGroup, Input, InputAdornment, OutlinedInput, Paper, TextField, Typography } from '@mui/material';
-import { Box } from '@mui/system';
-import { StyledTextField } from '../../components/styles/inputs';
-import { MainContentContainer, PageContainer } from '../../components/styles/containers';
-import { MainTitleText } from '../../components/styles/texts';
+import { ButtonGroup, Input, InputAdornment, OutlinedInput, Paper, TextField, Typography, alpha } from '@mui/material';
+import { Box, styled } from '@mui/system';
+import { StyledTextField } from '../../components/styles/inputs.styled';
+import { MainContentContainer, PageContainer } from '../../components/styles/containers.styled';
+import { MainTitleText } from '../../components/styles/texts.styled';
+import SearchAppBar from '../../components/SearchAppBar/SearchAppBar';
+
+
 
 const Home = () => {
     return (
         <PageContainer>
             <MainContentContainer>
                 <MainTitleText>Chronos Chart</MainTitleText>
-                <StyledTextField id='token-id' label='Seach Token' helperText='Paste address or seach name' fullWidth />
+                <StyledTextField id='token-id' label='Seach Token' helperText='Search token or paste contract' fullWidth />
+                <Box>
+                    <SearchAppBar />
+                </Box>
             </MainContentContainer>
         </PageContainer>
     );
