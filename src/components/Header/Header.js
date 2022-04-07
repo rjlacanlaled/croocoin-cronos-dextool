@@ -9,7 +9,7 @@ const StyledEqualSpaceContainer = styled(Paper)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #092E4D;
+    background-color: rgb(9, 46, 77);
     padding: 1rem 2rem 1rem 2rem;
 
     @media (max-width: 500px) {
