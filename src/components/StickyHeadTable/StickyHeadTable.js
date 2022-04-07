@@ -109,6 +109,7 @@ export default function StickyHeadTable() {
                 </Table>
             </TableContainer>
             <StyledTablePagination
+                key='1'
                 rowsPerPageOptions={[10, 25, 100]}
                 component='div'
                 count={rows.length}

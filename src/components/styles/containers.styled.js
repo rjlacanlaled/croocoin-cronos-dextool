@@ -46,8 +46,8 @@ const StyledFitContentPaper = styled(Paper)`
     }
 `;
 
-export const FitContentPaperContainer = ({ children, shrinkOrder }) => {
-    return <StyledFitContentPaper shrinkOrder={shrinkOrder}>{children}</StyledFitContentPaper>;
+export const FitContentPaperContainer = ({ children }) => {
+    return <StyledFitContentPaper>{children}</StyledFitContentPaper>;
 };
 
 export const EqualSpacePaperContainer = ({ children }) => {

@@ -38,9 +38,9 @@ const StyledButton = styled(Button)`
     }
 `;
 
-const CronosButton = ({ children, shrinkOrder }) => {
+const CronosButton = ({ children }) => {
     return (
-        <StyledButton variant='outlined' shrinkOrder={shrinkOrder}>
+        <StyledButton variant='outlined'>
             {children}
         </StyledButton>
     );
@@ -50,8 +50,8 @@ const Header = () => {
     return (
         <Box>
             <StyledEqualSpaceContainer>
-                <Logo shrinkOrder={1}>croocoin</Logo>
-                <FitContentPaperContainer shrinkOrder={3}>
+                <Logo>croocoin</Logo>
+                <FitContentPaperContainer>
                     <MiniTitleText>JOIN CROOCOIN COMMUNITY</MiniTitleText>
                     <SmallButtonContainer>
                         <Telegram htmlColor='#31A8DD' />
@@ -59,7 +59,7 @@ const Header = () => {
                         <YouTube htmlColor='#FF0000' />
                     </SmallButtonContainer>
                 </FitContentPaperContainer>
-                <CronosButton shrinkOrder={3}>Connect</CronosButton>
+                <CronosButton>Connect</CronosButton>
             </StyledEqualSpaceContainer>
         </Box>
     );
