@@ -37,20 +37,20 @@ function createData(address, name, symbol, balance, actions) {
 
 const rows = [
     createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Wrapped BNB', 'WBNB', 1324171354, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'MTK', 1403500365, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'BUSD', 60483973, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'US', 327167434, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'CA', 37602103, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'AU', 25475400, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'DE', 83019200, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'IE', 4857000, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'MX', 126577691, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'JP', 126317000, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'FR', 67022000, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'GB', 67545757, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'RU', 146793744, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'NG', 200962417, 'Delete'),
-    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ae', 'Token Name', 'BR', 210147125, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81an', 'Token Name', 'MTK', 1403500365, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ac', 'Token Name', 'BUSD', 60483973, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ad', 'Token Name', 'US', 327167434, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81af', 'Token Name', 'CA', 37602103, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ag', 'Token Name', 'AU', 25475400, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ah', 'Token Name', 'DE', 83019200, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ai', 'Token Name', 'IE', 4857000, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81aj', 'Token Name', 'MX', 126577691, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ak', 'Token Name', 'JP', 126317000, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81al', 'Token Name', 'FR', 67022000, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81am', 'Token Name', 'GB', 67545757, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ao', 'Token Name', 'RU', 146793744, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81ap', 'Token Name', 'NG', 200962417, 'Delete'),
+    createData('0xd6c25c4e7a64424b31795d021e824b13df1e81aq', 'Token Name', 'BR', 210147125, 'Delete'),
 ];
 
 const StyledTablePagination = styled(TablePagination)`
@@ -91,7 +91,7 @@ export default function StickyHeadTable() {
                     <TableBody>
                         {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
                             return (
-                                <TableRow hover role='checkbox' tabIndex={-1} key={row.code}>
+                                <TableRow hover role='checkbox' tabIndex={-1} key={row.contract}>
                                     {columns.map(column => {
                                         const value = row[column.id];
                                         return (
