@@ -2,8 +2,8 @@ import { Reddit, Telegram, YouTube } from '@mui/icons-material';
 import { Button, ButtonGroup, Paper, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import styled from 'styled-components';
-import { EqualSpacePaperContainer, FitContentPaperContainer, SmallButtonContainer } from '../styles/containers.styled';
-import { MiniTitleText } from '../styles/texts.styled';
+import { EqualSpacePaperContainer, FitContentPaperContainer, SmallButtonContainer } from './styles/containers.styled';
+import { MiniTitleText } from './styles/texts.styled';
 
 const StyledPaper = styled(Paper)`
     width: 100%;
