@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
+import TokenDetails from './pages/TokenDetails';
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/tokens'>
-                    <Route path=':address' />
+                    <Route path=':address' element={<TokenDetails />}/>
                 </Route>
             </Routes>
         </>
