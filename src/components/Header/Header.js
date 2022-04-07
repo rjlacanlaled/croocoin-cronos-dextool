@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import { EqualSpacePaperContainer, FitContentPaperContainer, SmallButtonContainer } from '../styles/containers.styled';
 import { MiniTitleText } from '../styles/texts.styled';
 
-const StyledEqualSpaceContainer = styled(Paper)`
+const StyledPaper = styled(Paper)`
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(9, 46, 77);
     padding: 1rem 2rem 1rem 2rem;
 
     @media (max-width: 500px) {
@@ -39,29 +39,23 @@ const StyledButton = styled(Button)`
 `;
 
 const CronosButton = ({ children }) => {
-    return (
-        <StyledButton variant='outlined'>
-            {children}
-        </StyledButton>
-    );
+    return <StyledButton variant='outlined'>{children}</StyledButton>;
 };
 
 const Header = () => {
     return (
-        <Box>
-            <StyledEqualSpaceContainer>
-                <Logo>croocoin</Logo>
-                <FitContentPaperContainer>
-                    <MiniTitleText>JOIN CROOCOIN COMMUNITY</MiniTitleText>
-                    <SmallButtonContainer>
-                        <Telegram htmlColor='#31A8DD' />
-                        <Reddit htmlColor='#FF4500' />
-                        <YouTube htmlColor='#FF0000' />
-                    </SmallButtonContainer>
-                </FitContentPaperContainer>
-                <CronosButton>Connect</CronosButton>
-            </StyledEqualSpaceContainer>
-        </Box>
+        <StyledPaper>
+            <Logo>croocoin</Logo>
+            <FitContentPaperContainer>
+                <MiniTitleText>JOIN CROOCOIN COMMUNITY</MiniTitleText>
+                <SmallButtonContainer>
+                    <Telegram htmlColor='#31A8DD' />
+                    <Reddit htmlColor='#FF4500' />
+                    <YouTube htmlColor='#FF0000' />
+                </SmallButtonContainer>
+            </FitContentPaperContainer>
+            <CronosButton>Connect</CronosButton>
+        </StyledPaper>
     );
 };
 

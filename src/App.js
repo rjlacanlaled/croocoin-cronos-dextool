@@ -18,6 +18,13 @@ const theme = createTheme({
               fontSize: '0.8rem'
             }
           }
+        },
+        MuiPaper: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: 'rgb(9, 46, 77)'
+                }
+            }
         }
     },
 });
